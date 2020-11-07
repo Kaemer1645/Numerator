@@ -3,7 +3,7 @@ import os, shutil
 from pathlib import Path
 
 class Numerator():
-    def __init__(self, directory:str, first_photo:str, prefix:str, first_number:str, step:str, file_type):
+    def __init__(self, directory:str, first_file:str, prefix:str, first_number:str, step:str, file_type):
 
         self.directory = directory
         self.first_photo = first_photo
@@ -21,4 +21,4 @@ class Numerator():
             if files >= self.first_photo:
                 changed = self.prefix + str(self.first_number) + self.file_type
                 print('Change from "%s" to "%s"'% (file,changed))
-                shutil.move(zdjecia,strona)
+                #shutil.move(zdjecia,strona)
