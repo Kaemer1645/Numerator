@@ -19,44 +19,46 @@ class Main:
             print(loader.errorString())
             sys.exit(-1)
         self.window.show()
-        #directory:str, first_photo:str, prefix:str, first_number:str, step:str, file_type
-        self.engine = Numerator(directory = self.selectDirectory(), first_photo = self.first_photo(),
+        self.engine = Numerator(directory = self.selectDirectory(), first_file = self.first_file(),
                                 prefix = self.new_file_name(),first_number = self.first_number(),
                                 step = self.steps(), file_type = self.file_type)
 
     #def silnik(self):
-        #pass
+        #test = (self.selectDirectory(), self.first_file(),self.new_file_name(),self.first_number(), self.steps(),self.file_type())
+        #return print(test)
 
     def selectDirectory(self):
 
         #dialog = QFileDialog()
         directory = str(QFileDialog.getExistingDirectory())
-        self.lineEdit.setText('{}'.format(directory))
+        self.window.le_dir.setText('{}'.format(directory))
+        dir_text = self.window.le_dir.text()
+        return dir_text
 
-
-    def first_photo(self):
-        label = QLineEdit.le_first_photo.text()
+    def first_file(self):
+        label = self.window.le_first_file.text()
         return label
 
     def first_number(self):
-        number = QLineEdit.le_first_number.text()
+        number = self.window.le_file_number.text()
         return number
 
     def new_file_name(self):
-        prefix = QLineEdit.le_prefix.text()
+        prefix = self.window.le_prefix.text()
         return prefix
 
     def steps(self):
-        steps = QLineEdit.le_step.text()
+        steps = self.window.le_step.text()
         return steps
     def file_type(self):
-        type = QLineEdit.le_file_type.text()
+        type = self.window.le_file_type.text()
         return type
 
     def run(self):
 
-        self.window.clicked.connect(self.selectDirectory)
         #self.window.clicked.connect(self.selectDirectory)
+        self.window.pb_dir.clicked.connect(self.silnik)
+        self.engine.run()
 
 
 
