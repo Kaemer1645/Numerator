@@ -19,19 +19,30 @@ class Main:
             print(loader.errorString())
             sys.exit(-1)
         self.window.show()
-        self.engine = Numerator(directory = self.selectDirectory(), first_file = self.first_file(),
-                                prefix = self.new_file_name(),first_number = self.first_number(),
-                                step = self.steps(), file_type = self.file_type)
+
 
     #def silnik(self):
         #test = (self.selectDirectory(), self.first_file(),self.new_file_name(),self.first_number(), self.steps(),self.file_type())
         #return print(test)
 
+    def engine(self):
+        #print(self.directory())
+        self.numerator = Numerator(directory=self.directory(), first_file=self.first_file(),
+                                   prefix=self.new_file_name(), first_number=self.first_number(),
+                                   step=self.steps(), file_type=self.file_type())
+        self.numerator.run()
+        #print(self.directory())
     def selectDirectory(self):
 
         #dialog = QFileDialog()
         directory = str(QFileDialog.getExistingDirectory())
         self.window.le_dir.setText('{}'.format(directory))
+        #return print(directory)
+    # def print_dir(self):
+    #     pri = self.window.le_dir.text()
+    #     return print(pri)
+
+    def directory(self):
         dir_text = self.window.le_dir.text()
         return dir_text
 
@@ -56,9 +67,10 @@ class Main:
 
     def run(self):
 
-        #self.window.clicked.connect(self.selectDirectory)
-        self.window.pb_dir.clicked.connect(self.silnik)
-        self.engine.run()
+        self.window.pb_dir.clicked.connect(self.selectDirectory)
+        #self.window.pb_dir.clicked.connect(self.silnik)
+        self.window.pb_run.clicked.connect(self.engine)
+        #self.window.pb_run.clicked.connect(self.print_dir)
 
 
 
