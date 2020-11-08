@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, shutil
+import os, shutil, sys
 from pathlib import Path
 
 class Numerator():
@@ -11,12 +11,13 @@ class Numerator():
         self.file_type = file_type
         self.first_number = first_number
         self.step = step
+        self.end = None
 
 
     def run(self):
-        print('dir',self.directory)
+        #print('dir',self.directory)
         os.chdir(Path(self.directory))
-        print('dada',os.getcwd())
+        #print('dada',os.getcwd())
         self.first_number = 1
         for file in os.listdir(self.directory):
             print(self.directory)
@@ -24,4 +25,7 @@ class Numerator():
             if file >= self.first_file:
                 changed = self.prefix + str(self.first_number) + self.file_type
                 print('Change from "%s" to "%s"'% (file,changed))
+        #self.end = input('Write "end" in the cmnd window to exit')
                 #shutil.move(zdjecia,strona)
+        #if self.end == 'end':
+            #sys.exit()

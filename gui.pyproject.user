@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.2, 2020-11-08T00:52:33. -->
+<!-- Written by QtCreator 4.11.2, 2020-11-08T12:26:03. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -143,11 +143,11 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">gui</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/STUDIA/Programowanie/Szymek_Numerator/QtNumerator/gui.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/STUDIA/Programowanie/Szymek_Numerator/QtNumerator/gui.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">gui2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/STUDIA/Programowanie/Szymek_Numerator/gui.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/STUDIA/Programowanie/Szymek_Numerator/gui.py</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{18371065-5ed7-41a8-bc74-26318a353bc8}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\STUDIA\Programowanie\Szymek_Numerator\QtNumerator\gui.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\STUDIA\Programowanie\Szymek_Numerator\gui.py</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -157,7 +157,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/STUDIA/Programowanie/Szymek_Numerator/QtNumerator</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/STUDIA/Programowanie/Szymek_Numerator</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
