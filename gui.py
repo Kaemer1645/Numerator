@@ -4,6 +4,7 @@ from PySide2.QtUiTools import QUiLoader
 from PySide2.QtWidgets import QApplication, QFileDialog, QPushButton, QLineEdit
 from PySide2 import QtXml
 from PySide2.QtCore import QFile, QIODevice
+from PySide2 import QtXml
 from numerator import Numerator
 
 class Main:
